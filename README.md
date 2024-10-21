@@ -4,7 +4,7 @@ Este proyecto es una simulación de un sistema de autenticación de usuarios (lo
 
 
 
-Características
+### Características
 
 Registro de usuarios
 Inicio de sesión
@@ -13,13 +13,13 @@ Validación de contraseñas seguras
 Registro de auditoría de accesos
 Panel de administración
 
-Requisitos
+### Requisitos
 
 PHP 7.0 o superior
 MySQL 5.6 o superior
 Servidor web (por ejemplo, Apache)
 
-Instalación
+### Instalación
 
 Clone el repositorio o descargue los archivos en su servidor web.
 Importe la base de datos:
@@ -34,7 +34,7 @@ Abra el archivo configdatabase.php
 Modifique las constantes Host, User y Pass con sus credenciales de MySQL.
 
 
-Uso:
+### Uso
 
 Acceda a la aplicación a través de su navegador web visitando la URL donde ha alojado el proyecto.
 En la página principal, podrá elegir entre registrarse o iniciar sesión.
@@ -45,7 +45,7 @@ Complete el formulario con su nombre de usuario, correo electrónico y contrase�
 Haga clic en "Registrarse".
 
 
-Para iniciar sesión:
+Para iniciar sesión
 
 Ingrese su nombre de usuario y contraseña.
 Haga clic en "Iniciar Sesión".
@@ -61,7 +61,7 @@ Para cerrar sesión, haga clic en "Cerrar Sesión" en cualquier página una vez 
 
 
 
-Seguridad
+### Seguridad
 
 Las contraseñas se almacenan hasheadas en la base de datos.
 Se implementa validación de entradas para prevenir inyecciones SQL y ataques XSS.
