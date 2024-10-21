@@ -1,0 +1,80 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    width: 100%;
+    padding: 15px 30px 15px 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: right;
+    position: fixed; /* Fija el navbar al tope de la pantalla */
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Espacio para que la tabla no quede debajo del nav */
+table {
+    margin-top: 70px; /* Ajusta el margen según el tamaño del nav */
+}
+
+/* Estilos de la tabla */
+table {
+    width: 80%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table th, table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Link de cerrar sesión */
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
