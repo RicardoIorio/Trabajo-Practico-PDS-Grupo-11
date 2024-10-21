@@ -1,0 +1,23 @@
+login-system/
+│
+├── config/
+│   └── database.php
+│
+├── includes/
+│   ├── functions.php
+│   └── auth.php
+│
+├── admin/
+│   └── log.php
+│
+├── css/
+│   └── style.css
+│
+├── index.php
+├── register.php
+├── login.php
+├── forgot-password.php
+├── reset-password.php
+├── logout.php
+├── README.md
+└── database.sql
