@@ -13,11 +13,12 @@ function register_user($username, $email, $password, $profile) {
         return false; // Usuario ya existe
     }
     
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT); // Hashea la contraseña
     $stmt = $pdo->prepare("INSERT INTO users (username, email, password, profile) VALUES (?, ?, ?, ?)");
     return $stmt->execute([$username, $email, $hashed_password, $profile]);
 }
 
+// funcion de login
 function login_user($username, $password) {
     global $pdo;
     
@@ -36,14 +37,17 @@ function login_user($username, $password) {
     return false;
 }
 
+// Detecta si el usuario esta loggeado
 function is_logged_in() {
     return isset($_SESSION['user_id']);
 }
 
+// Detecta si el usuario es administrador
 function is_admin() {
     return isset($_SESSION['profile']) && $_SESSION['profile'] == 'admin';
 }
 
+// Funcion para manejar las sesiones de usuario
 function logout_user() {
     log_access($_SESSION['user_id'], 'logout');
     session_unset();

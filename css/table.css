@@ -11,6 +11,21 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    margin-top: 15px; /* Asegura que el título esté debajo del nav */
+}
+
+.table-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Hace que el contenedor sea desplazable */
+    max-height: 500px; /* Limita la altura para evitar que la tabla sea muy larga */
+}
+
 /* Estilos de la barra de navegación */
 nav {
     width: 100%;

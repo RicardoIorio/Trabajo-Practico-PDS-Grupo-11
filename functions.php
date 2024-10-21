@@ -1,6 +1,5 @@
 <?php
-#session_start(); // Iniciar la sesión
-
+// Sanitización de Inputs
 function sanitize_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -8,6 +7,7 @@ function sanitize_input($data) {
     return $data;
 }
 
+// Validacion de contraseña para cumplir con los requerimientos
 function validate_password($password) {
     $uppercase = preg_match('@[A-Z]@', $password);
     $lowercase = preg_match('@[a-z]@', $password);
@@ -17,6 +17,7 @@ function validate_password($password) {
     return strlen($password) >= 8 && $uppercase && $lowercase && $number && $symbol;
 }
 
+// Registra los accesos de los usuarios y administradores
 function log_access($user_id, $action) {
     global $pdo;
     $stmt = $pdo->prepare("INSERT INTO access_log (user_id, action, timestamp) VALUES (?, ?, NOW())");

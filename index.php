@@ -6,6 +6,7 @@ if (!is_logged_in()) {
     header('Location: login.php');
     exit();
 }
+# Indice para los usuarios
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -32,6 +33,7 @@ if (!is_logged_in()) {
         </nav>
         <body>
     <h1>Log de Accesos</h1>
+    <div class="table-container">
     <table>
         <tr>
             <th>#</th>
@@ -48,6 +50,7 @@ if (!is_logged_in()) {
             </tr>
         <?php endforeach; ?>
     </table>
+    </div>
 </body>
 
     <?php endif; ?>
