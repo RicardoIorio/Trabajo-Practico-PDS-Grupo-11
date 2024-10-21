@@ -1,5 +1,5 @@
 # Trabajo-Practico-PDS-Grupo-11
-Sistema de Login
+## Sistema de Login
 Este proyecto es una simulación de un sistema de autenticación de usuarios (login) desarrollado en PHP con MySQL. El sistema permite a los usuarios registrarse y iniciar sesió. Además, incluye funcionalidades de administración y un registro de auditoría de los accesos.
 
 
