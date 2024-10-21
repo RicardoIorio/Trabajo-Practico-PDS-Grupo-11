@@ -26,21 +26,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Iniciar Sesión</h1>
-    <?php if ($error): ?>
-        <p class="error"><?php echo $error; ?></p>
-    <?php endif; ?>
-    <form action="" method="post">
-        <label for="username">Nombre de usuario:</label>
-        <input type="text" id="username" name="username" required>
+<div class="container">
+        <div class="logo">
+        <img src=media/unso_logo.png>
+        </div>
+    <div class="form-container">
+            <h1>Iniciar Sesión</h1>
+            <?php if ($error): ?>
+                <p class="error"><?php echo $error; ?></p>
+            <?php endif; ?>
+            <form action="" method="post" class="login-form">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
 
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit">Iniciar Sesión</button>
-    </form>
-    <p>¿No tienes una cuenta? <a href="register.php">Regístrate aquí</a></p>
-    <p><a href="forgot-password.php">¿Olvidaste tu contraseña?</a></p>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        <p>¿No tienes una cuenta? <a href="register.php">Regístrate aquí</a></p>
+    </div>
+</div>
 </body>
 </html>
 

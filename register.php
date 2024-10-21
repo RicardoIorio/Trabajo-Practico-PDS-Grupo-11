@@ -30,22 +30,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Registro</h1>
-    <?php if ($error): ?>
-        <p class="error"><?php echo $error; ?></p>
-    <?php endif; ?>
-    <form action="" method="post">
-        <label for="username">Nombre de usuario:</label>
-        <input type="text" id="username" name="username" required>
+    <div class="container">
+        <div class="logo">
+            <img src=media/unso_logo.png>
+        </div>
+        <div class="form-container">
+        <h1>Registro</h1>
+        <?php if ($error): ?>
+            <p class="error"><?php echo $error; ?></p>
+        <?php endif; ?>
+        <form action="" method="post" class="login-form">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
 
-        <button type="submit">Registrarse</button>
-    </form>
-    <p>¿Ya tienes una cuenta? <a href="login.php">Inicia sesión aquí</a></p>
+            <button type="submit">Registrarse</button>
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="login.php">Inicia sesión aquí</a></p>
+        </div>
+    </div>
 </body>
 </html>

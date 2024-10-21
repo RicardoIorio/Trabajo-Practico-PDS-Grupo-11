@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -127,4 +127,122 @@ th {
     color: #fff;
     background-color: #c82333;
     border-color: #bd2130;
+}
+*\
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal con logo y formulario */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1000px;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Estilo de la sección izquierda (logo) */
+.logo {
+    flex: 1; /* Ocupa el 50% del espacio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea; /* Opcional, puedes cambiarlo o quitarlo */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.logo img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Estilo de la sección derecha (formulario) */
+.form-container {
+    flex: 1; /* Ocupa el otro 50% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+}
+
+/* Formulario estilo */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Link de registro */
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
 }
