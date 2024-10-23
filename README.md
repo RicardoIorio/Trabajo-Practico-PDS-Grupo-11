@@ -47,6 +47,7 @@ Haga clic en "Registrarse".
 
 Para iniciar sesión
 
+Para iniciar sesión como administrador utilice el usuario "admin" y el contraseña "password".
 Ingrese su nombre de usuario y contraseña.
 Haga clic en "Iniciar Sesión".
 
